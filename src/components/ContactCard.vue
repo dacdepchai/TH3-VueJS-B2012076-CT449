@@ -7,7 +7,7 @@
 </script>
 
 <template>
-    <div>
+    <div class="contact-card">
         <div class="p-1">
             <strong>Tên:</strong>
             {{ contact.name }}
