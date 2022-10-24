@@ -10,7 +10,7 @@
 </template>
 
 <script>
-    import ContactFormAdd from "../components/ContactFromAdd.vue";
+    import ContactFormAdd from "../components/ContactFormAdd.vue";
     import ContactService from "@/services/contact.service";
 
     export default {
