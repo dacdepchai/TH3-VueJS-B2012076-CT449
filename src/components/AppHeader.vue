@@ -1,6 +1,6 @@
 <template>
     <nav class="navbar navbar-expand navbar-dark bg-dark">
-        <a href="/" class="navbar-brand">Ứng dụng Quản lý danh bạ</a>
+        <h1 class="navbar-brand">Ứng dụng Quản lý danh bạ</h1>
         <div class="mr-auto navbar-nav">
             <li class="nav-item">
                 <router-link :to="{ name: 'contactbook' }" class="nav-link">

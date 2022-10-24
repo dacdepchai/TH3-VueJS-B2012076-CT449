@@ -20,8 +20,9 @@
                     <i class="fas fa-redo"></i> Làm mới
                 </button>
 
-                <button class="btn btn-sm btn-success" @click="goToAddContact">
+                <button class="btn btn-sm btn-success" @click="goToAddContact()">
                     <i class="fas fa-plus"></i> Thêm mới
+                    
                 </button>
 
                 <button
@@ -56,7 +57,6 @@
 
 <script>
     import ContactCard from "@/components/ContactCard.vue";
-    
     import InputSearch from "@/components/InputSearch.vue";
     import ContactList from "@/components/ContactList.vue";
     import ContactService from "@/services/contact.service";
@@ -129,7 +129,7 @@ export default {
                 }
             }
         },
-        goToAddContact() {
+        async goToAddContact() {
             this.$router.push({ name: "contact.add" });
         },
     },
@@ -144,6 +144,5 @@ export default {
     text-align: left;
     max-width: 750px;
     margin: 0 50px;
-
     } 
 </style>

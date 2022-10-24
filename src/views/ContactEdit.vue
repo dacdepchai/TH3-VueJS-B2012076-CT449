@@ -56,7 +56,8 @@
                 if (confirm("Bạn muốn xóa Liên hệ này?")) {
                     try {
                         await ContactService.delete(this.contact._id);
-                        this.$router.push({ name: "contactbook" });
+                        this.$router.reduce({ name: "contactbook" });
+
                     } catch (error) {
                         console.log(error);
                     }
